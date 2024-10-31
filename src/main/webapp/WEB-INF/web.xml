@@ -30,4 +30,9 @@
     </context-param>
 
 
+    <listener>
+        <display-name>servlet-context-listener</display-name>
+        <listener-class>com.otunctan.webapp._08.listener.ServletContextListenerImpl</listener-class>
+    </listener>
+
 </web-app>
