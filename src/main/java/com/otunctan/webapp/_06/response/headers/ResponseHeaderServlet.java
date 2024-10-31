@@ -18,5 +18,8 @@ public class ResponseHeaderServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
         response.setHeader("username", "tes-user");
         response.addHeader("Auhorization", "Basic " + UUID.randomUUID().toString());
+        response.setHeader("X-Channel", "INTERNET");
+        response.setHeader("X-Cpu", "core-i7");
+//        response.sendRedirect("https://www.google.com/");
     }
 }

@@ -22,7 +22,7 @@
         <url-pattern>/config-servlet</url-pattern>
     </servlet-mapping>
 
-    <!--    Projeye özgü parametreler-->
+    <!--   Uygulama boyunca her yerden erişilebilecek parametreler . getServletContext()-->
     <context-param>
         <description>file location root path parameter</description>
         <param-name>rootPath</param-name>
