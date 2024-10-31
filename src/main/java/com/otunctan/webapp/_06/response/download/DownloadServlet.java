@@ -19,10 +19,10 @@ public class DownloadServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/ms-excel");
         response.setHeader("Content-Disposition", "attachment;filename=text.xlsx");
-        try (InputStream in = getServletContext().getResourceAsStream("temp/notlar.xlsx")) {
+        try (InputStream in = getServletContext().getResourceAsStream("temp/notlar.xlsx");
+             ServletOutputStream os = response.getOutputStream()) {
             int read;
             byte[] bytes = new byte[1024];
-            ServletOutputStream os = response.getOutputStream();
             while ((read = in.read(bytes)) != -1) {
                 os.write(bytes, 0, read);
             }
