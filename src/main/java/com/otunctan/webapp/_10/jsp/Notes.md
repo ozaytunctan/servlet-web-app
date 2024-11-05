@@ -54,7 +54,7 @@ NOT: Jsp dosyalarını translate edilmiş hali tomcat/work/Catalina/ altında bu
  #### Jsp implicit  
   - JspWriter           <> out
   - HttpServletRequest  <> request
-  - HtppServletResponse <> response
+  - HttpServletResponse <> response
   - ServletContext      <> application
   - HttpSession         <> session
   - ServletConfig       <> config
@@ -62,6 +62,7 @@ NOT: Jsp dosyalarını translate edilmiş hali tomcat/work/Catalina/ altında bu
   - PageContext         <> pageContext
   - Object              <> page 
      vs...
+
  #### JSP Page Lifecycle
   - jspInit()
   - jspService(req,res)

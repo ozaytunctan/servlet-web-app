@@ -11,6 +11,7 @@
       request.setAttribute("reqAttribute1","request attribute value");
       session.setAttribute("sessionAttribute1","session attribute value");
       application.setAttribute("applicationAttribute1","application attribute value");
+      pageContext.setAttribute("applicationAttribute1","application attribute value");
 
   %>
 
