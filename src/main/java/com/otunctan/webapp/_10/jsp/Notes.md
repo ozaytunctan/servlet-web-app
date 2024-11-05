@@ -42,10 +42,27 @@
    <jsp:action_name attribute=""/>
 
    #### 5. JSP Comment
-   <%-- --%> html de görünmez son kullanıcıya 
+   <%-- --%> html de görünmez son kullanıcıya gösterilmez.
 
    #### 6. JSP Directive
-   <%@      %>
-   <%@ page
-   <%@ include
-   <%@ taglib 
+   - <%@      %>
+   - <%@ page
+   - <%@ include
+   - <%@ taglib 
+   
+NOT: Jsp dosyalarını translate edilmiş hali tomcat/work/Catalina/ altında bulunur.
+ #### Jsp implicit  
+  - JspWriter           <> out
+  - HttpServletRequest  <> request
+  - HtppServletResponse <> response
+  - ServletContext      <> application
+  - HttpSession         <> session
+  - ServletConfig       <> config
+  - Throwable           <> exception
+  - PageContext         <> pageContext
+  - Object              <> page 
+     vs...
+ #### JSP Page Lifecycle
+  - jspInit()
+  - jspService(req,res)
+  - jspDestroy()
